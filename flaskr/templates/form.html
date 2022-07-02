@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ブックストアアプリ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<h1>三省堂書店</h1>
+<h2>編集モード</h2>
+<form method="post" , action="{{ url_for('register') }}">
+    <table border="1">
+        <tr>
+            <th>タイトル</th>
+            <th>価格（円）</th>
+            <th>入荷日</th>
+        </tr>
+        <tr>
+            <td><input type="text" , name="title"></td>
+            <td><input type="text" , name="price"></td>
+            <td><input type="text" , name="arrival_day"></td>
+        </tr>
+        <br>
+    </table>
+    <input type="submit" , value="登録">
+</form>
+
+</body>
+
+</html>
